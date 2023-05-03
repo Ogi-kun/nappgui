@@ -1,0 +1,20 @@
+{
+	"authors": [
+		"Georgy Markov"
+	],
+	"copyright": "Copyright © 2023, Georgy Markov",
+	"description": "D bindings to NAppGUI — a cross-platform GUI SDK",
+	"license": "MIT",
+	"name": "nappgui",
+	"targetType" : "library",
+	"dflags" : ["-checkaction=C"],
+	"buildTypes" : {
+		"debug" : {
+			"buildOptions" : ["debugMode", "debugInfo"],
+			"dflags" : ["-mscrtlib=libcmtd"]
+		},
+		"release" : {
+			"buildOptions" : ["releaseMode", "optimize", "inline"],
+		}
+	}
+}
